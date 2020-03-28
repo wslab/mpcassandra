@@ -1,0 +1,5 @@
+cloud-init-first-node:
+starts and configures first node (sets seed to it)
+
+cloud-init-other-node:
+starts and configures other nodes (sets seed to first node, created by cloud-init-first-node)
