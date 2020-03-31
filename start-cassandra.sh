@@ -113,4 +113,4 @@ done
 
 echo Startup complete. 
 echo You can connect to cassandra by running
-echo ${MULTIPASS_COMMAND} $seed_instance_name exec -- cqlsh
+echo ${MULTIPASS_COMMAND} exec $seed_instance_name -- cqlsh
