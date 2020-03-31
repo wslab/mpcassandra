@@ -24,9 +24,6 @@ KEYSPACES_TO_CREATE="sample1 sample2 sample3"
 # --- internal config
 MULTIPASS_COMMAND=multipass
 
-# --- variables
-CURRENT_INSTANCE=""
-
 function echoerr {
     echo "$@" 1>&2
 }
@@ -72,8 +69,6 @@ function ip_for_instance {
     echo $result
 }
 # ---
-
-start_instance myinstance /tmp/notexist
 
 for instance_number in $(seq 1 ${INSTANCE_COUNT}) ; do
     instance_name=$(instance_name_for_count $instance_number)
